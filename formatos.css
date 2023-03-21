@@ -1,43 +1,82 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --fonte-poppins: 'Poppins', sans-serif;
+    --cor-azul: #1D3557;
+    --cor-azul-claro: #62A8AC;
+    --cor-marrom: #806F56;
+    --cor-bege: #FEF0DC;
+    --cor-roxo: #BBA0CA;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte-poppins);
+    box-sizing: border-box; 
+    /*evita a soma do padding ao tamanho do box */
+}
+
+body {
+    background-image: -moz-linear-gradient(var(--cor-bege), var(--cor-azul-claro));
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
     
+
 }
 
-.logotipo{
-    width: 80px;
-    height: 80px;
+body,main {
+    width: 100%;
+    font-family: var(--fonte-poppins);
+    color: var(--cor-azul);
+    box-sizing: border-box;
 }
 
-
-
-header{
-    position: absolute;
+.cabecalho {
+    position: fixed;
+    right: 0;
     top: 0px;
-    background-color: black;
-    width: 100%;
-    height: 3vh;
-    color: white;
-    font-size: 19;
+    left: 0px;
+    padding: 0 10px;
+    background-color: var(--cor-marrom);
+    
+}
+.section__pp {
+
 }
 
-main{
+.container {
     display: flex;
-    width: 100%;
-    height: 90vh;
     flex-direction: column;
-    align-items: center; 
-    padding-top: ;
+    text-align: center;
+    
+
 }
 
-footer{
-    width: 100%;
-    height: 3vh;
-    font-size: 19px;
-    color: white;
-    font-weight: bolder;
-    text-align: center;
-    background-color: black;
+.container__logo-titulo {
+    display: flex;
+    align-items: center;
     
-    
+    column-gap: 1%;
 }
+
+.container__logo-titulo_titulo {
+    padding-top: 48px;
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.container__logotipo {
+    width: 120px;
+}
+
+.container__texto {
+    font-size: 22px;
+    font-weight: 600;
+    padding-left: 50px;
+}
+
 
