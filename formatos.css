@@ -1,82 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
-:root {
-    --fonte-poppins: 'Poppins', sans-serif;
-    --cor-azul: #1D3557;
-    --cor-azul-claro: #62A8AC;
-    --cor-marrom: #806F56;
-    --cor-bege: #FEF0DC;
-    --cor-roxo: #BBA0CA;
-}
-
-
 * {
     margin: 0;
     padding: 0;
-    font-family: var(--fonte-poppins);
-    box-sizing: border-box; 
-    /*evita a soma do padding ao tamanho do box */
+    box-sizing: border-box;
+
 }
 
 body {
-    background-image: -moz-linear-gradient(var(--cor-bege), var(--cor-azul-claro));
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 100vh;
-
-    
-
-}
-
-body,main {
-    width: 100%;
-    font-family: var(--fonte-poppins);
-    color: var(--cor-azul);
-    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
 }
 
 .cabecalho {
-    position: fixed;
-    right: 0;
-    top: 0px;
-    left: 0px;
-    padding: 0 10px;
-    background-color: var(--cor-marrom);
     
+    position: fixed;
+    top: 0;
+    left: 0;
 }
-.section__pp {
 
-}
-
-.container {
+.area-principal {
+    background-color: #FEF0DC;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    
-
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
-.container__logo-titulo {
+.area_logo-titulo {
+    display: flex;
+    gap: 10px;
+}
+
+.logotipo {
+    width: 125px;
+}
+
+.titulo {
+    font-size: 46px;
     display: flex;
     align-items: center;
+    padding-top: 30px;
+}
+
+.textos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.rodape {
+    width: 100%;
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
     
-    column-gap: 1%;
 }
-
-.container__logo-titulo_titulo {
-    padding-top: 48px;
-    font-size: 46px;
-    font-weight: 700;
-}
-
-.container__logotipo {
-    width: 120px;
-}
-
-.container__texto {
-    font-size: 22px;
-    font-weight: 600;
-    padding-left: 50px;
-}
-
-
