@@ -1,15 +1,17 @@
 .container_receitas {
     background-color: #FEF0DC;
-    margin: 20px 0;
+    margin: 40px 0;
     padding: 40px;
     display: flex;
+    height: auto;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
 }
 
 .receita {
     width: 450px;
-    height: 90vh;
+    height: 100vh;
     flex-grow: 1;
     border: 2px solid black;
     display: flex;

@@ -9,23 +9,27 @@ body {
     height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
+    background-color: #FEF0DC;
 }
 
 .cabecalho {
-    
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
 }
 
 .area-principal {
-    background-color: #FEF0DC;
-    height: 100vh;
+    
+    height: calc(100vh - 100px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    overflow-y: auto;
 }
 
 .area_logo-titulo {
@@ -56,6 +60,7 @@ body {
     background-color: black;
     color: white;
     position: fixed;
+    height: 25px;
     bottom: 0;
     left: 0;
     text-align: center;
